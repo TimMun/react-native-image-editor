@@ -72,9 +72,9 @@ RCT_EXPORT_METHOD(cropImage:(NSURLRequest *)imageRequest
     }
 
     // Store image
-    NSString *path = [RNCFileSystem generatePathInDirectory:[[RNCFileSystem cacheDirectoryPath] stringByAppendingPathComponent:@"ReactNative_cropped_image_"] withExtension:@".jpg"];
+    NSString *path = [RNCFileSystem generatePathInDirectory:[[RNCFileSystem cacheDirectoryPath] stringByAppendingPathComponent:@"ReactNative_cropped_image_"] withExtension:@".png"];
 
-    NSData *imageData = UIImageJPEGRepresentation(croppedImage, 1);
+    NSData *imageData = UIImagePNGRepresentation(croppedImage);
     NSError *writeError;
     NSString *uri = [RNCImageUtils writeImage:imageData toPath:path error:&writeError];
       
