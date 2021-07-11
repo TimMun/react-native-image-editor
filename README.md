@@ -1,11 +1,12 @@
 # react-native-image-editor
 
-Image Editor Native module for React Native. This module was extracted from React-Native core in the ["Lean Core"](https://github.com/facebook/react-native/issues/23313) process.
+Image Editor Native module for React Native.
 
 [![Build Status][build-badge]][build]
 [![Version][version-badge]][package]
 [![MIT License][license-badge]][license]
 [![PRs Welcome][prs-welcome-badge]][prs-welcome]
+[![Lean Core Badge][lean-core-badge]][lean-core-issue]
 
 ## Getting started
 
@@ -16,6 +17,10 @@ Image Editor Native module for React Native. This module was extracted from Reac
 or
 
 `npm install @react-native-community/image-editor --save`
+
+### Install Pods
+
+`npx pod-install`
 
 ### Link
 
@@ -69,3 +74,5 @@ For more advanced usage check our [example app](/example/src/App.js).
 [license]: https://opensource.org/licenses/MIT
 [prs-welcome-badge]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
 [prs-welcome]: http://makeapullrequest.com
+[lean-core-badge]: https://img.shields.io/badge/Lean%20Core-Extracted-brightgreen.svg?style=flat-square
+[lean-core-issue]: https://github.com/facebook/react-native/issues/23313
